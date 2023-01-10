@@ -1,0 +1,16 @@
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.7rem;
+    transition: all .2s;
+    &:hover {
+        background-color: gray;
+        border-radius: 4rem;
+       > .option_icon {
+            transform: scale(1.05);
+        }
+    }
+}

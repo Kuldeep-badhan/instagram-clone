@@ -1,0 +1,64 @@
+.post {
+  margin-top: 2rem !important;
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 2rem;
+ &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    &_userdata {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    > .three_dot_icon {
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+    }
+  }
+  &_body {
+    &_icons {
+      display: flex;
+      justify-content: space-between;
+      &_left {
+        display: flex;
+        gap: 1rem;
+        transition: all 0.3s;
+        > .message_icon,
+        .send_icon {
+          font-size: 1.3rem;
+        }
+        > .message_icon,
+        .send_icon,
+        .fav_icon {
+          &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+        }
+      }
+      &_right {
+        transition: all 0.3s;
+        > .bookmark_icon {
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    &_description {
+        display: flex;
+        flex-direction: column;
+        > strong {
+            padding: 5px 0;
+        }
+    }
+  }
+}
